@@ -1,0 +1,146 @@
+* {
+	font-family: 'Rock Salt', cursive;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #212529;
+	color: white;
+	margin-top: -40px;
+}
+
+h1 {
+	font-size: 70px;
+	text-align: center;
+	color: #4cbb17;
+	margin-bottom: 0px;
+}
+
+.btns {
+	display: flex;
+	flex-direction: row;
+	width: 800px;
+	height: 50px;
+	margin: 15px auto;
+	justify-content: space-evenly;
+}
+
+button {
+	width: 210px;
+	font-size: 20px;
+	background-color: transparent;
+	outline: none;
+	border-radius: 5px;
+	border: 2px solid white;
+	color: white;
+}
+button:last-of-type {
+	border: none;
+	padding: 2px;
+}
+
+.color-prompt {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 20px;
+}
+
+#color {
+	margin-top: 5px;
+	margin-bottom: -20px;
+	width: 80px;
+	height: 30px;
+	border-radius: 5px;
+}
+
+#color:hover {
+	transform: scale(1.1);
+}
+
+#color:active {
+	transform: scale(1.2);
+}
+
+button:hover {
+	transform: scale(1.1);
+}
+
+button:active {
+	transform: scale(1.2);
+}
+
+#rando {
+	background: linear-gradient(to right, #1e7b1e, #28a428, #32cd32);
+}
+
+.value-slider {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#slider {
+	-webkit-appearance: none;
+	background: white;
+	outline: none;
+	border-radius: 50px;
+}
+
+#slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 25px;
+	height: 25px;
+	background: #212529;
+	border-radius: 50px;
+}
+
+#slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	background: #212529;
+	border-radius: 50px;
+}
+
+.value {
+	font-size: 16px;
+	padding-left: 10px;
+	color: #4cbb17;
+}
+
+@media only screen and (max-width: 700px) {
+	.grid-container {
+		margin-left: 25%;
+		margin-right: auto;
+	}
+}
+
+.grid {
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-grid;
+	/* justify-content: center;
+	align-items: center; */
+	grid-template-columns: repeat(24, 2fr);
+	grid-template-rows: repeat(24, 2fr);
+	border: 5px solid white;
+	border-radius: 5px;
+	height: 550px;
+	width: 550px;
+	background-color: gray;
+}
+
+.cell {
+	background-color: white;
+	border: 1px solid black;
+}
+
+footer {
+	font-size: 25px;
+	bottom: 0;
+	padding: 50px 0;
+}
