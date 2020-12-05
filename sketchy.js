@@ -98,34 +98,4 @@ custColor.addEventListener('input', function () {
 	}
 });
 
-function activatePen(e) {
-	colorTheme = colorButtons.color.value;
-	switch (colorTheme) {
-		case 'random1':
-			currentColor = randomColor1();
-			e.target.style = `background-color: rgba(${currentColor})`;
-			break;
-		case 'random2':
-			currentColor = randomColor2();
-			e.target.style = `background-color: rgba(${currentColor})`;
-			break;
-		case 'random3':
-			currentColor = randomColor3();
-			e.target.style = `background-color: rgba(${currentColor})`;
-			break;
-		case 'darken':
-			currentColor = darken(e);
-			e.target.style = `background-color: rgba(${currentColor})`;
-			break;
-		case 'user':
-			currentColor = colorPicker.value;
-			e.target.style = `background-color: ${currentColor}`;
-			console.log(currentColor);
-			break;
-		default:
-			currentColor = [19, 123, 214, 0.95];
-			e.target.style = `background-color: rgba(${currentColor})`;
-	}
-}
-
 createGrid();
