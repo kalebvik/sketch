@@ -36,10 +36,7 @@ slider.addEventListener('input', function () {
 	currentVal.textContent = val;
 	removeAllChildNodes(grid);
 	// change row count based on slider
-	grid.setAttribute(
-		'style',
-		`grid-template-columns: repeat(${val}, 2fr); grid-template-rows: repeat(${val}, 2fr);`
-	);
+	grid.setAttribute('style', `grid-template-columns: repeat(${val}, 2fr); grid-template-rows: repeat(${val}, 2fr);`);
 	// change tile to black when hovered
 	for (let i = 0; i < val * val; i++) {
 		const div = document.createElement('div');
